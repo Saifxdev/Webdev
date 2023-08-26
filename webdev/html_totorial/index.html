@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            margin-left: 20px;
+        }
+        center{
+            background-color: rgb(226, 223, 216);
+            color: black;
+            font-weight: bolder;
+            margin-left: 600px;
+            margin-right: 510px;
+            margin-top: 20px;
+        }
+        hr{
+            color: white;
+            
+        }
+        a{
+            background-color: azure;
+            color: black;
+        }
+        table{
+            padding: 10px;
+            border-color: white; 
+            border-collapse: collapse;
+        }
+        th,td{
+            padding: 10px;
+            border: 2px; 
+            border: 2px solid forestgreen;
+        }
+       table#alter tr :nth-child(even){
+        background-color: rgb(128, 115, 0);
+         color: black;
+       }
+       table#alter tr :nth-child(odd){
+        background-color: rgb(237, 240, 237);
+        color: black;
+       }
+       table#alter th{
+        color: white;
+        background-color: black;
+       }
+       form{
+        background-color: rgb(64, 62, 62);
+        border: 2px;
+        border-radius: 20px;
+        border-color: white;
+        padding: 10px;
+       
+        border-width: 4px;
+        margin-right: 700px;
+       }
+       label{
+        color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding: 10px;
+        margin-bottom: 4px;
+       }
+       input{
+        background-color: rgb(29, 83, 29);
+        color: rgb(255, 255, 255);
+        border-color: white;
+        font-size: large;
+        font-weight: bold; 
+        padding: 7px;
+        border-radius: 20px;
+        border-color: rgb(73, 61, 122);
+       }
+       button{
+        color: white;
+        background-color: green;
+        border-radius: 20px;
+        border-color: white;
+        border-width: 3px;
+        padding: 5px;
+        margin-left: 10px;
+       }
+        .c1{
+            border-color: white;
+            border-radius: 20px;
+            border-width: 4px;
+            background-color: white;
+            color: black;
+            width: 400px;
+        }
+        #c2{
+            border-color: white;
+            border-radius: 20px;
+            border-width: 4px;
+            background-color: white;
+            color: black;
+            width: 400px;
+        }
+        .div1{
+            background-color: blue;
+            color: white;
+            font-weight: bold;
+            font-style: italic;
+            width: 400px;
+        }
+        span{
+            background-color: blue;
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-style: italic;
+            
+        }
+    </style>
+</head>
+<body>
+    <center>Anchor Tag</center>
+    <p>anchor tag is used to make a file navigation</p>
+    <a href="anchor.html">click me</a>
+    <p>we can use an image as a anchor tag as well:</p>
+    <a href="anchor.html"><img src="car.jpg" alt=""></a>
+    <hr>
+<center>Image tag</center>
+<p>image tag is used to shaw an image on the web page</p>
+<img src="car.jpg" alt="my car ">
+<p>heigth weidth src and alt is the attribute of the image tag</p>
+<hr>
+<center>Table tag</center>
+<p>table tag is used to make a table on the web page:</p>
+<table align="center">
+    <caption style="color: white; margin-right: 150px;">My records</caption>
+    <tr>
+        <th>name:</th>
+        <th>age:</th>
+        <th>email:</th>
+    </tr>
+    <tr>
+        <td>saif</td>
+        <td>22</td>
+        <td>saif@gmail.com</td>
+    </tr>
+    <tr>
+        <td>saif</td>
+        <td>22</td>
+        <td>saif@gmail.com</td>
+    </tr>
+    <tr>
+        <td>saif</td>
+        <td>22</td>
+        <td>saif@gmail.com</td>
+    </tr>
+    <br>
+    <br>
+</table>
+<p>
+    talking about colspan
+        </p>
+        <table>
+          <tr>
+              <th>name</th>
+              <th colspan="2">Mob</th>
+          </tr>
+          <tr><td>
+              jack
+          </td>
+          <td>1233456788
+          </td>
+          <td>7263726326</td>
+      </tr>
+          
+        </table>
+        <br>
+        <br>
+        <p>talking about row span</p>
+        <table align="center">
+            <tr>
+                <th>name <td>jack</td></th>
+                <th rowspan="2">mob<td>12233333</td></th>
+            </tr>
+             <tr> </tr>
+        </table>
+        <br>
+        <br>
+        <table id="alter"   >
+            <caption style="color: white; margin-right: 150px;">My records</caption>
+            <thead> 
+            <tr>
+                <th>name:</th>
+                <th>age:</th>
+                <th>email:</th>
+            </tr>
+        </thead>
+        <tbody> 
+            <tr>
+                <td>saif</td>
+                <td>22</td>
+                <td>saif@gmail.com</td>
+            </tr>
+            <tr>
+                <td>saif</td>
+                <td>22</td>
+                <td>saif@gmail.com</td>
+            </tr>
+            <tr>
+                <td>saif</td>
+                <td>22</td>
+                <td>saif@gmail.com</td>
+            </tr>
+            <br>
+            <br>
+        </tbody>
+        </table>
+        <br>
+        <hr>
+        <center>List</center>
+        <p>list tag is used to build the list:</p>
+         <ul >
+            <p>this is a unordered list</p>
+            <li>name</li>
+            <li>age</li>
+            <li>gender</li>
+         </ul>
+         <ol>
+          <p>this is a ordered list</p>
+          <li>bhau</li>
+          <li>hindutani bhau</li>
+          <li>hell</li>
+         </ol>
+         <dl>
+            <p>this is a descriptive list:</p>
+             <dt>Mango</dt>
+             <dd>aap aam chus kar khate hau ya kat kar</dd>
+         </dl>
+         <br>
+         <hr>
+         <center>Form tag:</center>
+         <p>form tag is used to create a form</p>
+         <form action="">
+            <label for="name     ">Name</label><br><br>
+            <input type="text"> <br> <br> <br>
+            <label for="age">Age</label><br><br>
+            <input type="text" name="" id=""><br> <br> <br>
+            <label for="emial    ">Email</label><br><br>
+            <input type=" email" name="" id=""><br> <br> <br>
+            <label for="password ">Password</label><br><br>
+            <input type=" password" name="" id=""><br> <br> <br>
+            <button>Regiter</button> 
+            <button>Login</button>
+         </form>
+         <br>
+         <hr>
+         <center>class tag</center>
+         <p>we will be learning about the class tag</p>
+         <ul class ="c1">
+            <li>banana</li>
+            <li>apple</li>
+            <li>coconut</li>  
+         </ul>
+         <br>
+         <hr>
+         <center>Id tag</center>
+         <ol id="c2">
+            <li>roti</li>
+            <li>kapada</li>
+            <li>makanmalkin</li>
+         </ol>
+         <br>
+         <hr>
+         <center>select tag</center>
+         <p>we can make an field of select tag:</p>
+          select a colage:
+         <input type="text" list="my11"> <br>
+
+         <select name="collage" id="my11"  >
+            <option value="1">select</option>
+            <option value="2">uit</option>
+            <option value="3">ucer</option>
+            <option value="4">ucem</option>
+         </select>
+         <br>
+         <hr>
+         <center>iframe tag</center>
+         <p>iframe tag is used to display nested webpages </p>
+         <p>nested tag means web pages witun web pages:</p>
+         <p>hello every one this is a web page</p>
+         <iframe src="https://www.react.com/" frameborder="1" height="400px" width="100%"></iframe>
+         <br>
+         <p>iframe is used to play videos as well</p>
+         <iframe src="https://www.youtube.com/watch?v=6l8RWV8D-Yo&t=1000s" frameborder="0" ></iframe>
+         <br>
+         <hr>
+        
+         <center>computer code</center>
+         <p>we can write comuter cde as well</p>
+         <code>printf("hello world")</code> <br>
+         <kbd>this is how an keyboard tag look like</kbd>
+           <br>
+           <hr>
+           <center>marquee tag</center>
+           <p>marquee tag is used to build the maequee</p>
+           <marquee behavior="slide" direction="">hello i am a marquue</marquee>
+           <br>
+           <hr>
+           <center>textarea</center>
+           <p>it is used to create a text area to write some info</p>
+           <textarea name="" id="" cols="30" rows="10"></textarea>
+           <br>
+           <hr>
+           <center>quote</center>
+           <p>qutattion</p>
+           <q>jo ham the toh kadar nahi ,ab joh ham nahi toh sirf batein hai</q>
+           <br><hr>
+           <center>div tag</center>
+           <p>it is used to make a group of elements:</p>
+           <div class="div1">
+             <p>hello this is a example of a div class:</p>
+             <ul>
+                <li>abba</li>
+                <li>dabba</li>
+                <li>chabba</li>
+             </ul>
+           </div>
+           <br>
+        <hr>
+        <center>span tag</center>
+        <p>it is used to make inline change:</p>
+        <p>hello world i am a <span>Time travellar</span></p>
+        <br>
+        <hr>
+        
+</body>
+</html>

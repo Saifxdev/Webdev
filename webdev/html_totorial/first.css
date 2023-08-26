@@ -1,0 +1,77 @@
+body{
+    background-color: black;
+    color:white;
+    padding: 10px;
+    margin: 10px; 
+    overflow: scroll;
+}
+center{
+    border-radius: 20px;
+    background-color: rgb(10, 16, 179);
+    color: white;
+    font-size: 15px;
+    border-style: groove;
+    border-color: white;
+    width:  max-content;
+   font-weight: bold;
+   padding: 7px;  align-content: center;
+   margin: 10px;
+}
+
+#back{
+    background-color: white;
+    border-color: rgb(224, 42, 42);
+    border-radius: 2px;
+    border-style: double;
+    border-width: 5px;
+} 
+.back{
+    width: 70%;
+    height: 400px;
+    margin-right: 200px;
+    margin-left: 150px;
+    border-color: brown;
+    border-width: 6px;
+    border-style: double;
+    background-image:url('car2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+.op:trans{
+opacity: 0.4;
+filter:  blur(200);
+}
+.img1{
+    filter: blur(5px);
+    filter: drop-shadow(5px);
+    background-image: url('car.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+    float: inherit;
+}
+
+.ov{
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    border-color: white;
+    border-style: double;
+    border-width: 4px;
+    overflow: scroll;
+    height: 300px;
+    width: 300px;
+}
+.vis{
+    background-color: aquamarine;
+}
+.in{
+    background-color: whitesmoke;
+}
+.in1{
+    background-color: blueviolet;
+}
+.coll{
+    background-color: blue;
+}

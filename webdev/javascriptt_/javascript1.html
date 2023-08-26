@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my javascript</title>
+    <script>
+        document.write("hello i have been written inside the head tag")
+    </script>
+     <script type="" src="script.js"></script>
+
+    <style>
+        body{
+            background-image: -webkit-linear-gradient(rgb(165, 165, 238),white,rgb(233, 192, 192));
+            color: black;
+            font-size: 20px;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        hr{
+            color: black;
+            height: 3px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <h2>we can write javasciprt in 3 places:</h2>
+    <hr>
+    <ol>
+        <li>inside head tag</li>
+        <li>
+            inside body tag
+        </li>
+        <li>
+            .js file
+        </li>
+    </ol>
+<hr>
+    <h2>
+        example of head tag:
+    </h2>
+    <br>
+    <br>
+    <hr>
+    <h2> example of body tag:</h2>
+    <script>
+        document.write("hello i have been written inside the body tag:");
+    </script>
+    <br>
+    <br>
+    <h2>.js file ouside the html file</h2>
+    <hr>
+    <br>
+    <input type="button" name="" id="" onclick="f1()" value="clickme">
+    <br>
+    <hr>
+    <h2>comments in javasciprt</h2>
+    <p>single line comment</p>
+    <p>multiline comment</p>
+    <input type="button" value="add" onclick="add()">
+    <hr><br>
+
+
+    <p>javascirpt local variable and global variable</p>
+    <br>
+    <script>
+        var x=10;
+        function v1(){
+            alert(v1);
+        }
+        function v2(){
+             alert(v2);
+        } 
+    </script>
+    
+    <script>
+        con();
+        loop();
+    </script> 
+    <hr>
+    <br>
+
+
+    <p>javascript funtion:</p>
+   <script>
+    function d1(){
+        var x=10;
+        for( var i=0;i<=x; i++){
+            document.write(i,"   ");
+        }
+    }
+    d1();
+   </script>
+  <br>
+  <input type="button" name="" id="" value="click" onclick="d1()">
+  <br>
+  <hr>
+  <br>
+
+
+  <p>javascrpit funtion argument</p>
+ 
+  <br>
+  <input type="button" name="" id="" value="cube" onclick="arg()">
+  <hr>
+  <br>
+  <p>function with the return value:</p>
+  <script>
+    document.write(ret());
+  </script>
+ <br>
+ <hr>
+
+
+ <p>javascritp funtion object</p>
+ <script>
+    var ob=new f("n1",
+    "n2",
+    "return n1+n2"
+    );
+    document.writeln(ob(2,4));
+ </script>
+ <hr>
+ <br>
+
+
+ <p>javascript objects</p>
+ <script>
+
+    ob={
+        id:10,
+        name:"jack",
+        age:9
+    }
+
+    document.write(ob.age,"</br>");
+    document.write(ob.id,"</br>");
+    document.write(ob.name,"</br>");
+
+
+    document.write("<p>using new keyword</p>")
+
+    var emp=new Object();
+    var x=emp.age=10;
+    var y=emp.name="saif";
+    var z=emp.slary=20000;
+    document.write(x,"</br>",y,"</br>",z);
+
+    document.write("<p> by using constructor</p>")
+    function em(id,name,age){
+        this.age=age;
+        this.name=name;
+        this.id=id;
+    }
+    e=new em(10,"jack",20);
+    document.write("name:",e.name,"</br>","age:",e.age,"</br>","id:",e.id)
+ </script>
+ <hr>
+ <br>
+
+
+ <p>javascript array:</p>
+ <script>
+
+    document.write("fisrt way </br>")
+    var emp=["jack","jones","jethalal"];
+    for(var x=0;x<emp.length;x++){
+        document.write(emp[x],"</br>");
+    }
+
+    document.write("second way:</br>");
+    var ar=new Array();
+    ar[0]="jacl";
+    ar[1]=1;
+    ar[2]="saif";
+    for(var x=0;x<ar.length;x++){
+        document.write(ar[x],"</br>");
+    }
+
+    document.write("thirsd way </br>");
+    var a=new Array("siaf","jack","oggy");
+    for(var x=0;x<a.length;x++){
+        document.write(a[x],"</br>");
+    }
+ </script>
+<hr>
+<br>
+ <p>javascript string</p>
+ <script>
+    var str="jack";
+    document.write(str,"</br>");
+    document.write("</br>");
+    var sr=new String("hello world");
+    document.write(sr);
+ </script>
+</body>
+</html>

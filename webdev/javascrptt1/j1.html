@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="j1.css">
+    <script src="j1.js"></script>
+</head>
+<body>
+    <div class="d"> 
+     <div class="d1">
+      <b>javascript is dynamic in nature: load content without page refresh:</b><br>
+      <b>validate iuser input:</b><br>
+      <b>it is a object based programming langiage:</b><br>
+      <b>it exicutes on the browser it does not need the internet:</b><br>
+      <b>integration with html and css</b>
+     </div>
+     <div class="d1">
+        <b>javascript libraries and frameworks:</b>
+        <p>react</p>
+        <p>angular</p>
+        <p>jquery</p>
+        <p>ext.js</p>
+        <p>node.js</p>
+        <p>polymer</p>
+        <p>vue js</p>
+       </div>
+       <div class="d1">
+       <b>Framework:<p>less code more work predefined structure:</p></b>
+       <b>Liabrabries:<p>set of funtions and predefined works of funtion is defined:</p></b>
+       </div>
+    </div> 
+    <h3>How to add javascript in your code:</h3>
+    <ol>
+        <li>internal</li>
+        <li>external</li>
+    </ol>
+    <br>
+
+    <h3>Internal javascript:</h3>
+    <p>we will be writng it on the html file using <b>script tag</b></p>
+     
+    <h3>External javacript is used by external file link in a html file </h3>
+    <hr>
+    <h2 style="text-align: center;">Some important javascript funtions</h2>
+    <div class="d"> 
+        <div class="d1">
+            <b>1:alert() funtion:</b>
+            <button onclick="f1()">Alert funtion:</button>
+            <script>
+                function f1(){
+                    alert("hello world:")
+                }
+            </script>
+        </div>
+        <div class="d1">
+            <b>2: Confirm funtion</b>
+            <button onclick="f2()">Confirm funtion:</button>
+            <script>
+                function f2(){
+                confirm("are you sure:")
+                }
+            </script>
+            </div>
+            <div class="d1">
+            <b>3:Console log</b>
+            <button onclick="f3()">Consolelog</button>
+            <script>
+                function f3(){
+                    console.log("hello world");
+                }
+            </script>
+        </div>
+        <div class="d1">
+           <b>4:document.write:</b>
+           <button onclick="f4()">Document</button>
+           <script>
+            function f4(){
+                document.write("helllo");
+            }
+           </script>
+        </div>
+         <div class="d1">
+      <b>5: promt</b>
+      <button onclick="f5()">Promt:</button>
+      
+         </div>
+    </div>
+    <hr>
+    <h2>javascript variables:</h2>
+    <ul>
+        <li>variables are the container which holds useful data...</li>
+        <li>basic unit of storage in a program..</li>
+        <button onclick="f1()">click to know my name</button>
+        <script>
+            var name;
+            name="saif"
+            function f1(){
+                alert(name);
+            }
+
+        </script>
+    </ul>
+    <hr>
+    <h3 style="text-align: center;">Dom funtions:</h3>
+    <ul>
+        <li>document.getElementByid()</li>
+        <li>document.getElementByClassName()</li>
+        <li>innerHTML()</li>
+    </ul>
+    <hr>
+    <b>getting elemnt by id</b>
+    <p id="id1">hello world</p>
+    <div id="id2">
+        hello i am id2
+    </div>
+    <div id="idred">
+        <button onclick="f1()">click to red:</button>
+    </div>
+    <hr>
+    <div id="d11">
+        <button onclick="f11()">red</button>
+        <button onclick="f22()">blue</button>
+        <button onclick="f33()">green</button>
+    </div>
+    <script>
+        // taking input from id...
+        var x=document.getElementById(id1);
+        console.log(x);
+        var y=document.getElementById(id2);
+        console.log(y)
+        // giving input to id...
+        document.getElementById("id1").innerHTML="<i>i am who</i>"
+        function f1(){
+        document.getElementById("idred").innerHTML="#d11{background-color:red;}"
+        }
+        // changing backgroug color using button:
+        function changeColor(color){
+          document.getElementById("d11").style.background=color;
+        }
+        function f11(){
+           changeColor("red");
+        }
+        function f22(){
+            changeColor("blue");
+        }
+        function f33(){
+            changeColor("green");
+        }
+    </script>
+    <hr>
+    <h3>gettting data form form...</h3>
+    <form name="f1">
+        <label for="name">Name:</label>
+        <input type="text" value="name">
+        <button onclick="abc()">submit</button>
+    </form>
+    
+</body>
+</html>

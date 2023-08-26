@@ -1,0 +1,186 @@
+body{
+    background-color: black;
+    padding: 10px;
+    margin: 2px;
+    overflow: scroll; 
+    color: rgb(35, 231, 35);
+    font-weight: bold; 
+}
+
+.d1{ 
+    display: flex;
+    border-radius: 20px;
+    border-width: 4px;
+    border-style: double;
+    border-color: white;
+    margin: 10px;
+    padding: 10px;
+}
+
+.d2{
+    width: 150px;
+    height: 150px;
+    border-radius: 250%;
+    border-color: rgb(223, 216, 216);
+    border-width: 3px;
+    border-style: groove;
+    background: blue;
+    position: relative;
+    -webkit-animation: d22 6s;
+}
+
+@-webkit-keyframes d22{
+    0%{background: red;left:0px;top:0px;}
+    25%{background: green;left:300px;top:px;}
+    50%{background:yellow;left: 200px;top:300px;}
+    75%{background-color: brown;left: 0px; top: 200px;}
+    100%{background-color: blue;left: 0px;top:0px;}
+}
+.grad{
+    height: 300px;
+    width: 300px;
+    background: -webkit-linear-gradient(blue,white);
+    margin: 10px;
+    
+}
+.grad3{
+    height: 300px;
+    width: 300px;
+    background: -webkit-linear-gradient(rgb(89, 160, 88),white);
+    margin: 10px;
+}
+.grad2{
+    height: 300px;
+    width: 300px;
+    background: -webkit-linear-gradient(rgb(243, 87, 105),white);
+    margin: 10px;
+}
+.grad4{
+    height: 300px;
+    width: 300px;
+    background: -webkit-linear-gradient(rgb(211, 221, 101),white);
+    margin: 10px;
+}
+.d11{
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    border-color: white;
+    border-width: 10px;
+    border-style: double;
+}
+
+.grad10{
+    height: 300px;
+    width: 300px;
+    background: -webkit-radial-gradient(rgb(89, 160, 88),white);
+    margin-left: 10px;
+    padding: 10px;
+    border-color: blue;
+    border-width: 3px;
+}
+.grad11{
+    height: 300px;
+    width: 300px;
+    background: -webkit-radial-gradient(rgb(243, 87, 105),white);
+    margin-left: 10px;
+    padding: 10px;
+}
+.grad12{
+    height: 300px;
+    width: 300px;
+    background: -webkit-radial-gradient(rgb(211, 221, 101),white);
+    margin-left: 10px;
+    padding: 10px;
+}
+.grad13{
+    height: 300px;
+    width: 300px;
+    background: -webkit-radial-gradient(rgb(76, 168, 225),white);
+    margin-left: 10px;
+    padding: 10px;
+}
+
+.tran{
+    height: 200px;
+    width: 200px;
+    background: -webkit-linear-gradient(rgb(147, 239, 147),white);
+     -webkit-transition: width 1s;
+}
+.tran:hover{
+    width:300px;
+}
+
+.tran1{
+    height: 200px;
+    width: 200px;
+    background: -webkit-linear-gradient(rgb(147, 239, 147),white);
+     -webkit-transition: width 1s,height 1s;
+     
+}
+.tran1:hover{
+    width:300px;
+    height: 300px;
+}
+
+.tran2{
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    background: -webkit-linear-gradient(rgb(147, 239, 147),white);
+     -webkit-transition: transform 1s;
+}
+
+.tran2:hover{
+    transform: rotate(360deg);
+}
+
+.t1{
+    visibility: hidden;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    display: inline-block;
+    border-bottom: 2px solid white;
+}
+.t1.t2{
+    visibility: hidden;
+    width: 120px;
+    background-color: white;
+    color: black;
+
+}
+.t1:hover.t2{
+    visibility: visible;
+}
+.f1{
+    display: -webkit-flex;
+    display: flex;
+    background: -webkit-linear-gradient(rgb(140, 220, 239),rgb(76, 75, 75));
+    border-color: white;
+    border-width: 4px;
+    border-style: double; 
+    padding: 10px;
+    overflow: scroll;
+}
+
+.f2{
+    display: -webkit-flex;
+    display: flex;
+    background: -webkit-linear-gradient(rgb(152, 237, 154),rgb(227, 224, 224));
+    border-color: white;
+    border-width: 4px;
+    border-style: double;
+    height: 200px;
+    width: 200px;
+    padding-left: 10px;
+    margin-left: 10px; 
+}
+
+@media only screen  and (max-width:500px){
+    body{
+        background:-webkit-linear-gradient(rgb(245, 153, 164),white,rgb(157, 240, 157));
+        color: black;
+    }
+} 
